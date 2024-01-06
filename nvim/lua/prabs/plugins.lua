@@ -39,7 +39,13 @@ use({
 		vim.api.nvim_set_hl(0, "NvimTreeIndentMarker", { fg = "#30323E" })
 	end,
 })
-
+use({
+	"nvim-lualine/lualine.nvim",
+	requires = { "nvim-tree/nvim-web-devicons" },
+	config = function()
+		require("lualine").setup()
+	end,
+})
 use({ "tpope/vim-surround" })
 use({ "tpope/vim-commentary" })
 use({ "tpope/vim-sleuth" })
@@ -53,6 +59,7 @@ use({
 	end,
 })
 use({ "jessarcher/vim-heritage" })
+use({ "tpope/vim-fugitive", dependencies = "tpope/vim-rhubarb" })
 use({
 	"ahmedkhalf/project.nvim",
 	config = function()
