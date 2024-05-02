@@ -31,6 +31,8 @@ return {
 				format = lspkind.cmp_format(),
 			},
 			mapping = {
+				["<C-l>"] = cmp.mapping.complete(),
+				["<C-e>"] = cmp.mapping.abort(),
 				["<Tab>"] = cmp.mapping(function(fallback)
 					if cmp.visible() then
 						cmp.select_next_item()
@@ -66,4 +68,3 @@ return {
 		})
 	end,
 }
-

@@ -65,6 +65,7 @@ return {
 			position = "right",
 			mappings = {
 				["<cr>"] = "open_with_window_picker",
+				["Z"] = "expand_all_nodes",
 			},
 		},
 		filesystem = {

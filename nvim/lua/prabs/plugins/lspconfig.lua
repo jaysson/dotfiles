@@ -35,7 +35,9 @@ return {
 			},
 		})
 
-		require("neodev").setup()
+		require("neodev").setup({
+			library = { plugins = { "nvim-dap-ui" }, types = true },
+		})
 
 		-- Keymaps
 		vim.keymap.set("n", "<Leader>d", "<cmd>lua vim.diagnostic.open_float()<CR>")
@@ -57,4 +59,3 @@ return {
 		})
 	end,
 }
-

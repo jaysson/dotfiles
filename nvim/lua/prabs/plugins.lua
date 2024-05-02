@@ -26,8 +26,11 @@ require("lazy").setup({
 	{ "wellle/targets.vim" },
 	{ import = "prabs.plugins.autopairs" },
 	{ import = "prabs.plugins.project" },
+	{ "github/copilot.vim" },
 	-- Git support
-	{ "tpope/vim-fugitive", dependencies = "tpope/vim-rhubarb" },
+	{ "tpope/vim-fugitive",               dependencies = "tpope/vim-rhubarb" },
+	-- Debugging
+	{ import = "prabs.plugins.dap" },
 	-- Syntax highlighting
 	{ import = "prabs.plugins.treesitter" },
 	-- Search
