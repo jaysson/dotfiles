@@ -16,6 +16,7 @@ require("lazy").setup({
 	{ import = "prabs.plugins.tokyonight" },
 	{ import = "prabs.plugins.lualine" },
 	{ import = "prabs.plugins.neo-tree" },
+	{ import = "prabs.plugins.lsp-file-operations" },
 	{ import = "prabs.plugins.alpha" },
 	-- Text Editing
 	{ "tpope/vim-surround" },
